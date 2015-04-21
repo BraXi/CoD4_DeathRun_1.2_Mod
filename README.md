@@ -20,6 +20,7 @@ Credits
 *	MR-X - Main Menu background. | Xfire: mousasalem
 *	Etheross - Converted Shepherd, Makarov & Tomahawk to CoD4. | Xfire: etheross
 * Infinity Ward for models from CoD:MW2
+* Authors of original Deathrun mod for CS 1.6 for idea
 * And others, special thanks to mappers...
 
 
