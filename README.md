@@ -5,6 +5,7 @@ The players in the opposite team have to kill the trapmaster (aka. activator) af
 As of this day, more than 4 years after it's initial release, it's still one of the most popular CoD4 mods along with ProMod and CodJumper.
 
 Official website: http://www.moddb.com/mods/braxs-death-run-mod
+Official trailer: https://www.youtube.com/watch?v=n_YTTdQPJfk
 
 Have fun with that code, would be nice if you commited something back to the mod if you find it worthy =)
 Extract deathrun_dev to your cod4/mods directory and run makeMod.bat, press D (you're copying directories) if asked
