@@ -1,7 +1,8 @@
 DeathRun 1.2 Mod for CoD4
 =========================
-Deathrunis a mod in which a single player fights alone against the other team, his only weapons are his deadly traps. 
+Deathrun is a mod in which a single player fights alone against the other team, his only weapons are his deadly traps.
 The players in the opposite team have to kill the trapmaster (aka. activator) after finishing his course without dying. 
+As of this day, more than 4 years after it's initial release, it's still one of the most popular CoD4 mods along with ProMod and CodJumper.
 
 Official website: http://www.moddb.com/mods/braxs-death-run-mod
 
