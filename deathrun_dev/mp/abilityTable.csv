@@ -1,0 +1,8 @@
+1,0,3200,specialty_null,specialty_null,@PERKS_NONE,@PERKS_NONE,
+2,1,3201,specialty_longersprint,specialty_longersprint,@PERKS_EXTREME_CONDITIONING,@PERKS_SPRINT_FOR_LONGER_DISTANCES,
+3,2,3202,specialty_holdbreath,specialty_holdbreath,@PERKS_IRON_LUNGS,@PERKS_LONGER_BREATH_FOR_STEADIER,
+4,3,3203,specialty_bulletdamage,specialty_bulletdamage,@PERKS_STOPPING_POWER,@PERKS_INCREASED_BULLET_DAMAGE,
+5,4,3204,specialty_bulletaccuracy,specialty_bulletaccuracy,@PERKS_STEADY_AIM,@PERKS_INCREASED_HIPFIRE_ACCURACY,
+6,5,3205,specialty_rof,specialty_rof,@PERKS_DOUBLE_TAP,@PERKS_INCREASED_RATE_OF_FIRE,
+7,6,3206,specialty_fastreload,specialty_fastreload,@PERKS_SLEIGHT_OF_HAND,@PERKS_FASTER_RELOADING,
+8,7,3207,specialty_armorvest,specialty_armorvest,@PERKS_JUGGERNAUT,@PERKS_INCREASED_HEALTH,

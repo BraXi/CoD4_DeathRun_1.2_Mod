@@ -1,0 +1,78 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			50
+
+
+#define CHOICE_GROUP			"contents"
+
+//#define CHOICE_SEP_1			2
+//#define CHOICE_SEP_2			6
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+{
+	menuDef
+	{
+		name			"dr_welcome"
+		fullscreen		0
+		rect			0 0 640 480	
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		5
+		border			0
+		legacySplitScreenScale
+		
+		onEsc			{ close self; }
+		onClose			{}
+
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			FULLSCREEN_WIDE
+			background		"black"
+			visible			1
+			decoration
+		}
+		// gradient_top
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+		// gradient_bottom
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+
+		CHOICE_MENU_TITLE( "Welcome to Death Run 1.2" )
+		CHOICE_BUTTON_VIS( 1, "LET ME PLAY", scriptMenuResponse "welcome"; close self;, 1 )		
+
+
+		itemDef
+		{
+			visible			1
+			rect			0 200 600 300 CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN
+			forecolor		1 1 1 1
+			autowrapped
+			text			"Welcome to Death Run ^11.2 INDEV^7!\nWe're running development version of mod and it's pretty much possible to find bugs or something might not work as it should.\n^1Additionaly NOT ALL features were implemented yet!\n\nPlease report bugs and leave your comment at ^2www.braxi.org\n^7Don't forget to visit www.AfterLifeGaming.net :)"
+			textfont		UI_FONT_NORMAL
+			textscale		.6
+			textalignx		8
+			textaligny		16
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+		//welcome( "server", ""dvarString(ui_rules)"" )
+	}
+}
+

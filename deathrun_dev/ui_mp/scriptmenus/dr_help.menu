@@ -1,0 +1,97 @@
+#include "ui/menudef.h"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/dr_common.inc"
+
+
+{
+	menuDef
+	{
+		name			"dr_help"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Help; set dr_help_text Click at one of buttons to see help contents.";
+			//UPDATE_PERK1;
+
+		}
+
+		onClose
+		{
+		}
+
+
+
+
+		onEsc
+		{
+			close self;
+			open "team_select";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 360
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+
+		/*itemDef 
+		{
+			// 570 - 330 = 240
+			rect			330 100 220 400
+			style			WINDOW_STYLE_SHADER
+			exp				material( "$levelBriefing" )
+			border			2
+			bordercolor		.4 .4 .4 .8
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}*/
+
+		itemDef
+		{
+			name			"description"
+			visible			1
+			rect			322 100 220 400
+			forecolor		1 1 1 1
+			autowrapped
+			exp				text( dvarString("dr_help_text") )
+			textfont		UI_FONT_NORMAL
+			textscale		.25
+			textalignx		8
+			textaligny		16
+			textalign		ITEM_ALIGN_LEFT
+			decoration
+		}
+
+
+
+		DR_BUTTON( "0", 100, 110, 180, 20, "What is Death Run?", execnow "set dr_help_text @DRM_WHAT_IS_DEATHRUN";, 1 )
+		DR_BUTTON( "1", 100, 135, 180, 20, "Commands", execnow "set dr_help_text @DRM_COMMANDS";, 1 )
+		DR_BUTTON( "2", 100, 160, 180, 20, "Unlockables", execnow "set dr_help_text @DRM_UNLOCKABLES";, 1 )
+		//DR_BUTTON( "2", 100, 160, 180, 20, "^2SERVER DESCRIPTION & RULES", execnow "set dr_help_text @DRM_UNLOCKABLES";, 1 )
+		//DR_BUTTON( "3", 100, 180, 180, 20, "Credits", close self; open dr_help;, 1 )
+
+		DR_BUTTON( "4", 100, 220, 180, 20, "Back to menu", close self; open "team_select";, 1 )
+		//DR_BUTTON( "5", 100, 255, 180, 20, "@MENU_LEAVE_GAME", open popup_endgame;, 1 )
+	}
+}
+
+
+	

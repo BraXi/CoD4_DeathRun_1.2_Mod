@@ -1,0 +1,18 @@
+
+
+# stateid, stat, min val, max val, codename, xp, unlocks, icon, name, description
+1,501,2501,0,1,rising_star,100,;,icon_risingstar,Rising Star,Win one match,
+2,502,2502,0,10,10wins,1000,;,icon_10wins,On Top,Win 10 matches,
+3,503,2503,0,1,im_back,200,;,icon_one,Im Back,Use additional life and kill Activator to earn another one,
+4,504,2504,0,1,sick_day,150,;,icon_sickday,Sick Day,Dont die in at least 8 rounds,
+5,505,2505,0,1,airkill,200,;,icon_airkill,Air Kill,Kill an enemy while You both are in the air,
+6,506,2506,0,1,last_hope,500,;,icon_lasthope,Last Hope,As Activator kill at least 3 Jumpers with Your weapon,
+7,507,2507,0,75,75punchkills,1000,;,icon_75meleekills,Metal Punch,Kill 75 enemies with Your hands,
+8,508,2508,0,200,lastman,2000,;,icon_lastman,Last Man,Kill 200 enemies with Your knife,
+9,509,2509,0,500,knifemaster,2000,;,icon_knifemaster,Knife Master,Kill 500 enemies with Your knife,
+10,510,2510,0,1,darkangel,1500,;,icon_darkangel,Dark Angel,Eliminate all enemies with only traps when there are 20 or more Jumpers,
+11,511,2511,0,100,kills_1,1000,;,icon_100frags,Hunter I,Eliminate 100 enemies,
+12,511,2511,100,250,kills_2,1500,;,icon_250frags,Hunter I,Eliminate 250 enemies,
+13,511,2511,250,500,kills_3,2000,;,icon_500frags,Hunter II,Eliminate 500 enemies,
+14,511,2511,500,1000,kills_4,2500,;,icon_1000frags,Hunter IV,Eliminate 1000 enemies,
+15,511,2511,1000,2000,kills_5,3000,;,icon_2000frags,Hunter V,Eliminate 2000 enemies,

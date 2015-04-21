@@ -1,0 +1,13 @@
+#num,id,rank,menu image,fx,name dvar,desc dvar
+1,0,0,spray0_menu,deathrun/spray0,dr_s0,dr_s0d
+2,1,1,spray1_menu,deathrun/spray1,dr_s1,dr_s1d
+3,2,2,spray2_menu,deathrun/spray2,dr_s2,dr_s2d
+4,3,3,spray3_menu,deathrun/spray3,dr_s3,dr_s3d
+5,4,4,spray4_menu,deathrun/spray4,dr_s4,dr_s4d
+6,5,5,spray5_menu,deathrun/spray5,dr_s5,dr_s5d
+7,6,6,spray6_menu,deathrun/spray6,dr_s6,dr_s6d
+8,7,7,spray7_menu,deathrun/spray7,dr_s7,dr_s7d
+9,8,8,spray8_menu,deathrun/spray8,dr_s8,dr_s8d
+10,9,9,spray9_menu,deathrun/spray9,dr_s9,dr_s9d
+11,10,10,spray10_menu,deathrun/spray10,dr_s10,dr_s10d
+12,11,11,spray11_menu,deathrun/spray11,dr_s11,dr_s11d

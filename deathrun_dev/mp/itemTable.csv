@@ -1,0 +1,8 @@
+1,0,1,hud_icon_m9beretta,beretta,@WEAPON_BERETTA,Semi-automatic with a high capacity.,
+2,1,3,hud_icon_colt_45,colt45,@WEAPON_COLT1911,Semi-automatic with a medium power.,
+3,2,6,hud_icon_usp_45,usp,@WEAPON_USP,Semi-automatic with a medium power.,
+4,3,9,hud_icon_desert_eagle,deserteagle,@WEAPON_DESERTEAGLE,Semi-automatic with a high power.,
+5,4,12,hud_icon_m40a3,m40a3,@WEAPON_M40A3,Bolt action sniper rifle.,
+6,5,15,hud_icon_desert_eagle,deserteaglegold,@WEAPON_DESERTEAGLEGOLD,Gold plated semi-automatic with high power.,
+7,6,20,hud_icon_remington700,remington700,@WEAPON_REMINGTON700,Bolt action sniper rifle. Very effective.,
+8,7,24,hud_icon_44,colt44,Colt Anaconda .44,Semi-automatic with deadly .44 bullets.,

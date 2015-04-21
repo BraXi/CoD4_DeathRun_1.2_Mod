@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
+Admin Tools (c) 2011 BraXi.
+
+Syntax:	\rcon set admin "<command>:<arg>"
+	\rcon set admin "message:Enjoy Death Run Server!"
+
+Visit www.braxi.cba.pl to read more details about admin tools.
+
+Avaiable commands:
+
+* msg & message - text message to all players
+
+* kill - kill player with specified number
+
+* restart - restart round or map, ex.: "restart:1" will restart round and save scores, "restart:0" will restart map and scores
+
+* bounce - give a big kick to specified player
+
+* drop - drop player's current weapon
+
+* takeall - take all weapons from player
+
+* heal - restore player's health to maximum
+
+* redirect - redirect player to another server, usage "redirect:<pNum>:<ip>:<port>" (ex.: "redirect:0:inext-gaming.com:30000")
+
+* kick - kick player from server, can also show reason, usage "kick:<pNum>:<reason>" (ex.: "kick:4:blocking other players")
+
+* ban - ban player from entering this server, can also show reason, usage "ban:<pNum>:<reason>" 
+
+* warn - warn player, after 5 warnings player gets banned, usage "warn:<pNum>:<reason>"
+
+* rw - remove all warnings from player
+
+* spawn - respawn dead player

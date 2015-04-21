@@ -1,0 +1,137 @@
+#include "ui/menudef.h"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+
+/*		#define UPDATE_PERK1 \
+		execOnDvarStringValue "name" braxi "seta trololo 1; set wsxch 1"; \
+		execOnDvarStringValue cl_guid 8cde88b55633f4b64c523480212b5fc6 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid f80d944ccf284e56994c92bd4a8bf8cf "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 43c53db67d0ee84c66c3536e3cb73687 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid d5057c1ddf7bb72b16498828e642d830 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid ab349624e59e0cbfdd47e084f3072b4f "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 42997fceaf2e5b579a3de6af8d4c7668 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 8928d90c99b59135c0f2f4f5a60c99a5 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid fb41a00c2023ddce3ce595ba5a4911b8 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 4d30836c20d4f2cafbb41658499696d8 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 990225a94988492b0dc9c2e311507e3b "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 97e718d034ab5ad089bd0732d8b526ad "set wsxch 1"; \
+		execOnDvarStringValue cl_guid d8c4038b7f0548add758733e476b5340 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 3acd5683f99eb9eeab085e6d03caa0c2 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid a6672f18c79abe002864d2648a3d3740 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 5cc35df5bd49b2855e916a5f4dd1e466 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 45e4e1a4159a91de983d13adc86e587a "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 6573c41960cfd3a67b3a11fcbd14f916 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 420719845547ea16b0c94ad608a080fe "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 61031e66220747f194eba4f9946e236f "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 53afe06f1a54d603510e016404715faa "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 710d09a19731b06be6a67ab1ce00ac3c "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 2fe744a589c49adcf0b58a388a959916 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid f2408a055ef4320e5786126d9cdc72fc "set wsxch 1"; \
+		execOnDvarStringValue cl_guid b6b0211cd611e08e8989781d9c49916b "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 9f9c2db724344a04d66a602069d0c155 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 64d8e3f3971b7ee2b3b2ff5fffac3519 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 76dac289366126041059e0f2748865b8 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 9f9c2db724344a04d66a602069d0c155 "set wsxch 1"; \
+		execOnDvarStringValue cl_guid 351d8c62c5985ba72e04d5e69c874a8c "set wsxch 1"; */
+
+#include "ui_mp/dr_common.inc"
+{
+	menuDef
+	{
+		name			"team_select"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Welcome";
+			//UPDATE_PERK1;
+		}
+
+		onClose
+		{
+		}
+
+
+
+
+		onEsc
+		{
+			close self;
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 210
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			rect			80 300 480 1.3
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			// 570 - 330 = 240
+			rect			330 100 220 180
+			style			WINDOW_STYLE_SHADER
+			exp				material( "$levelBriefing" )
+			border			2
+			bordercolor		.4 .4 .4 .8
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+
+		DR_BUTTON( "0", 100, 110, 180, 20, "@DRM_PLAY", scriptMenuResponse "autoassign";, 1 )
+		DR_BUTTON( "1", 100, 135, 180, 20, "@DRM_SPECTATE", scriptMenuResponse "spectator";, 1 )
+
+		DR_BUTTON( "2", 100, 170, 180, 20, "@DRM_CHARACTER", scriptMenuResponse "character_menu";, 1 )
+		
+		DR_BUTTON( "3", 100, 195, 180, 20, "@DRM_HELP", close self; open dr_help;, 1 )
+		DR_BUTTON( "4", 100, 220, 180, 20, "@DRM_OPTIONS", close self; open dr_options;, 1 )
+		DR_BUTTON( "5", 100, 255, 180, 20, "@MENU_LEAVE_GAME", open popup_endgame;, 1 )
+
+		DR_BUTTON( "6", 100, 280, 180, 20, "^3VIP", open "vip";, when( dvarInt( "vip" ) == 1 ) )
+
+		itemDef
+		{
+			name			"motd"
+			visible			1
+			rect			80 320 470 140
+			forecolor		1 1 1 1
+			autowrapped
+			exp				text( dvarString("dr_motd") )
+			textfont		UI_FONT_OBJECTIVE
+			textscale		.32
+			textalignx		8
+			textaligny		16
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+	}
+}
+
+
+	

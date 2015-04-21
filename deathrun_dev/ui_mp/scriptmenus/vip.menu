@@ -1,0 +1,101 @@
+#include "ui/menudef.h"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+
+#include "ui_mp/dr_common.inc"
+{
+	menuDef
+	{
+		name			"vip"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName ^3VIP";
+			//UPDATE_PERK1;
+		}
+
+		onClose
+		{
+		}
+
+
+
+
+		onEsc
+		{
+			close self;
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 210
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			rect			80 300 480 1.3
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			// 570 - 330 = 240
+			rect			330 100 220 180
+			style			WINDOW_STYLE_SHADER
+			exp				material( "$levelBriefing" )
+			border			2
+			bordercolor		.4 .4 .4 .8
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+
+		DR_BUTTON( "0", 100, 110, 180, 20, dvarString( "vip_1" ), scriptMenuResponse "vip_1";, when(dvarString( "vip_1" ) != "") )
+		DR_BUTTON( "1", 100, 135, 180, 20, dvarString( "vip_2" ), scriptMenuResponse "vip_2";, when(dvarString( "vip_2" ) != "") )
+		DR_BUTTON( "2", 100, 160, 180, 20, dvarString( "vip_3" ), scriptMenuResponse "vip_3";, when(dvarString( "vip_3" ) != "") )
+		DR_BUTTON( "4", 100, 185, 180, 20, dvarString( "vip_4" ), scriptMenuResponse "vip_4";, when(dvarString( "vip_4" ) != "") )
+		DR_BUTTON( "5", 100, 210, 180, 20, dvarString( "vip_5" ), scriptMenuResponse "vip_5";, when(dvarString( "vip_5" ) != "") )
+		DR_BUTTON( "6", 100, 235, 180, 20, dvarString( "vip_6" ), scriptMenuResponse "vip_6";, when(dvarString( "vip_6" ) != "") )
+
+		itemDef
+		{
+			name			"motd"
+			visible			1
+			rect			80 320 470 140
+			forecolor		1 1 1 1
+			autowrapped
+			exp				text( dvarString("dr_motd") )
+			textfont		UI_FONT_OBJECTIVE
+			textscale		.32
+			textalignx		8
+			textaligny		16
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+	}
+}
+
+
+	

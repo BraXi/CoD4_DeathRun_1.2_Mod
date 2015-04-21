@@ -1,0 +1,80 @@
+///////////////////////////////////////////////////////
+///|         |///|        |///|       |/\  \/////  ////
+///|  |////  |///|  |//|  |///|  |/|  |//\  \///  /////
+///|  |////  |///|  |//|  |///|  |/|  |///\  \/  //////
+///|          |//|  |//|  |///|       |////\    ///////
+///|  |////|  |//|         |//|  |/|  |/////    \//////
+///|  |////|  |//|  |///|  |//|  |/|  |////  /\  \/////
+///|          |//|__|///|__|//|__|/|__|///  ///\  \////
+/////////////////////////////////////////__/////\__\///
+///////////////////////////////////////////////////////
+//
+//	Xfire : braxpl
+//
+//
+
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+
+REFERENCE           MODNAME
+LANG_ENGLISH        "^2BraXi's ^7Death Run Mod ^31.2.1"
+
+REFERENCE           MOTD
+LANG_ENGLISH        "Visit ^2www.braxi.org ^7- the official Death Run Mod forums."
+
+REFERENCE           NOTICE
+LANG_ENGLISH        "^3Death Run Notice"
+
+REFERENCE           GAME_EXPERIENCE_CHANGED
+LANG_ENGLISH        "BraXi's Death Run Mod 1.2\nwww.braxi.org"
+
+REFERENCE           ABOUT
+LANG_ENGLISH        "About Death Run Mod"
+
+REFERENCE           ABOUT_HEADER
+LANG_ENGLISH        "About Death Run..."
+
+REFERENCE           SPRAY_NEW
+LANG_ENGLISH        "New Spray Unlocked!"
+
+REFERENCE           CHARACTER_NEW
+LANG_ENGLISH        "New Character Unlocked!"
+
+REFERENCE           CHARACTER_ZOEY
+LANG_ENGLISH        "Zoey"
+
+REFERENCE           CHARACTER_FARMER
+LANG_ENGLISH        "Farmer"
+
+REFERENCE           CHARACTER_GANGSTER
+LANG_ENGLISH        "Gangster"
+
+REFERENCE           CHARACTER_SHEPHERD
+LANG_ENGLISH        "General Shepherd"
+
+REFERENCE           CHARACTER_MASTERCHIEF
+LANG_ENGLISH        "Masterchief"
+
+REFERENCE           CHARACTER_JUGGERNAUT
+LANG_ENGLISH        "Juggernaut"
+
+REFERENCE           CHARACTER_MAKAROV
+LANG_ENGLISH        "Makarov"
+
+REFERENCE           CALL_FREEROUND
+LANG_ENGLISH        "Press ^3[FIRE] ^7to select ^2FREE RUN ^7round."
+
+REFERENCE           ALIVE_JUMPERS
+LANG_ENGLISH        "Jumpers Left:^3 &&1"
+
+REFERENCE           ROUND_BEGINS_IN
+LANG_ENGLISH        "Round begins in..."
+
+REFERENCE           WAITING_FOR_PLAYERS
+LANG_ENGLISH        "Waiting for more players to start round..."
+
+ENDMARKER
+
+

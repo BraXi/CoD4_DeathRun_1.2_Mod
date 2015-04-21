@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////////
+///|         |///|        |///|       |/\  \/////  ////
+///|  |////  |///|  |//|  |///|  |/|  |//\  \///  /////
+///|  |////  |///|  |//|  |///|  |/|  |///\  \/  //////
+///|          |//|  |//|  |///|       |////\    ///////
+///|  |////|  |//|         |//|  |/|  |/////    \//////
+///|  |////|  |//|  |///|  |//|  |/|  |////  /\  \/////
+///|          |//|__|///|__|//|__|/|__|///  ///\  \////
+/////////////////////////////////////////__/////\__\///
+///////////////////////////////////////////////////////
+//
+//	Xfire : maciusiak
+//
+// D.R.M. - Death Run Menus
+//
+
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+
+REFERENCE           PLAY
+LANG_ENGLISH        "Auto-Assign"
+
+REFERENCE           PLAY_DESC
+LANG_ENGLISH        "Start game as Jumper."
+
+REFERENCE           SPECTATE
+LANG_ENGLISH        "Spectator"
+
+REFERENCE           SPECTATE_DESC
+LANG_ENGLISH        "Watch others players."
+
+REFERENCE           CHARACTER
+LANG_ENGLISH        "Customize character"
+
+REFERENCE           CHARACTER_DESC
+LANG_ENGLISH        "Select your gaming character and spray logo."
+
+REFERENCE           HELP
+LANG_ENGLISH        "Help"
+
+REFERENCE           HELP_DESC
+LANG_ENGLISH        "Show help, tips and features."
+
+REFERENCE           OPTIONS
+LANG_ENGLISH        "Settings"
+
+REFERENCE           OPTIONS_DESC
+LANG_ENGLISH        "Change various game settings."
+
+
+
+REFERENCE           WHAT_IS_DEATHRUN
+LANG_ENGLISH        "Death Run is a classical mod in which a single player fights alone against the other team, his only weapons are his deadly traps. The players in the opposite team have to kill the activator after finishing his course without dying.\n\n^2Mod Version: ^31.2.1 (15.06.2014)\n^2Website: ^3www.braxi.org"
+
+
+REFERENCE           COMMANDS
+LANG_ENGLISH		"\^3openScriptMenu -1 authorize:MyLogin:MyPassword ^7- Login to administration\n^3\openScriptMenu -1 adminmenu ^7- Open Administration Control Panel\n^3\openScriptMenu quickstuff 3rdperson ^7- Toggle camera\n^3\openScriptMenu quickstuff suicide ^7- Commit suicide\n^3\set drHideCompass 1 ^7- Hide/show compass\n^3\set show_hud 0 ^7- Hide hud"
+
+
+REFERENCE           UNLOCKABLES
+LANG_ENGLISH		"You can unlock ^312^7 characters, ^325^7 sprays and ^38^7 abilities by respectively earning new levels and completing challenges."

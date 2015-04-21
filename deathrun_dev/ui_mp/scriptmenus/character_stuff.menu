@@ -1,0 +1,283 @@
+#include "ui/menudef.h"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/dr_common.inc"
+
+
+
+//( "Unlocked at level ^3"+tableLookup(ITEM_TABLE, 0, id, 2)+"^7." )
+
+#define UPDATE_CHARACTER \
+	execNow "set ui_character_mtl "tableLookup(CHARACTER_TABLE, 0, stat(890)+1, 3) \
+	execNow "set ui_character_name "tableLookup(CHARACTER_TABLE, 0, stat(890)+1, 5)
+
+{
+	menuDef
+	{
+		name			"character_stuff"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Customize Character";
+			//UPDATE_CHARACTER;
+		}
+		onClose
+		{
+		}
+		onEsc
+		{
+			close self;
+			open "character_stuff";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 360
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		#include "ui_mp/dr_characters_common.inc"
+
+		DR_BUTTON( "0", 100, 110, 180, 20, "Characters", close self; open "dr_characters";, 1 )
+		DR_BUTTON( "1", 100, 135, 180, 20, "Sprays", close self; open "dr_sprays";, 1 )
+		
+		DR_BUTTON( "2", 100, 170, 180, 20, "Weapons", close self; open "dr_weapons";, 1 )
+		DR_BUTTON( "3", 100, 195, 180, 20, "Abilities", close self; open "dr_abilities";, 1 )
+
+		DR_BUTTON( "4", 100, 230, 180, 20, "Challenges", close self; open "menu_challenges";, 1 )
+	//	DR_BUTTON( "5", 100, 255, 180, 20, "Enter Prestige", ;, 1 )
+
+		DR_BUTTON( "6", 100, 290, 180, 20, "Done", close self; open "team_select";, 1 )
+	}	
+		
+	menuDef
+	{
+		name			"dr_characters"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Characters"
+		}
+
+		onClose
+		{
+		}
+
+		onEsc
+		{
+			close self;
+			open "character_stuff";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 360
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+	
+		#include "ui_mp/dr_characters_common.inc"
+
+		DR_CHARACTER( 100, 1 )
+		DR_CHARACTER( 127, 2 )
+		DR_CHARACTER( 154, 3 )
+		DR_CHARACTER( 181, 4 )
+		DR_CHARACTER( 208, 5 )
+		DR_CHARACTER( 235, 6 )
+		DR_CHARACTER( 262, 7 )
+		DR_CHARACTER( 289, 8 )
+		DR_CHARACTER( 316, 9 )
+		DR_CHARACTER( 343, 10 )
+		DR_CHARACTER( 370, 11 )
+		DR_CHARACTER( 397, 12 )
+
+// specialty_locked specialty_new
+	}
+
+
+
+
+	menuDef
+	{
+		name			"dr_sprays"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Sprays"
+		}
+
+		onClose
+		{
+		}
+
+		onEsc
+		{
+			close self;
+			open "character_stuff";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		DR_SPRAY( 0, 0, 1 )
+		DR_SPRAY( 1, 0, 2 )
+		DR_SPRAY( 2, 0, 3 )
+		DR_SPRAY( 3, 0, 4 )
+		DR_SPRAY( 4, 0, 5 )
+
+		DR_SPRAY( 0, 1, 6 )
+		DR_SPRAY( 1, 1, 7 )
+		DR_SPRAY( 2, 1, 8 )
+		DR_SPRAY( 3, 1, 9 )
+		DR_SPRAY( 4, 1, 10 )
+
+		DR_SPRAY( 0, 2, 11 )
+		DR_SPRAY( 1, 2, 12 )
+		DR_SPRAY( 2, 2, 13 )
+		DR_SPRAY( 3, 2, 14 )
+		DR_SPRAY( 4, 2, 15 )
+
+		DR_SPRAY( 0, 3, 16 )
+		DR_SPRAY( 1, 3, 17 )
+		DR_SPRAY( 2, 3, 18 )
+		DR_SPRAY( 3, 3, 19 )
+		DR_SPRAY( 4, 3, 20 )
+		
+		DR_SPRAY( 0, 4, 21 )
+		DR_SPRAY( 1, 4, 22 )
+		DR_SPRAY( 2, 4, 23 )
+		DR_SPRAY( 3, 4, 24 )
+		DR_SPRAY( 4, 4, 25 )
+	}
+
+	menuDef
+	{
+		name			"dr_weapons"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Weapons"
+		}
+
+		onClose
+		{
+		}
+
+		onEsc
+		{
+			close self;
+			open "character_stuff";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 360
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		#include "ui_mp/dr_characters_common.inc"
+
+		DR_WEAPON( 100, 1 )
+		DR_WEAPON( 140, 2 )
+		DR_WEAPON( 180, 3 )
+		DR_WEAPON( 220, 4 )
+		DR_WEAPON( 260, 5 )
+		DR_WEAPON( 300, 6 )
+		DR_WEAPON( 340, 7 )
+		DR_WEAPON( 380, 8 )
+	}
+
+	menuDef
+	{
+		name			"dr_abilities"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		
+		onOpen
+		{
+			execNow "set menuName Abilities"
+		}
+
+		onClose
+		{
+		}
+
+		onEsc
+		{
+			close self;
+			open "character_stuff";
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+		// separator
+		itemDef 
+		{
+			rect			319 90 2 360
+
+			style			WINDOW_STYLE_SHADER
+			background		"white"
+			forecolor		1 1 1 0.6
+			visible			1
+			decoration
+		}
+
+		#include "ui_mp/dr_characters_common.inc"
+
+		DR_ABILITY( 100, 1 )
+		DR_ABILITY( 140, 2 )
+		DR_ABILITY( 180, 3 )
+		DR_ABILITY( 220, 4 )
+		DR_ABILITY( 260, 5 )
+		DR_ABILITY( 300, 6 )
+		DR_ABILITY( 340, 7 )
+		DR_ABILITY( 380, 8 )
+	}
+}

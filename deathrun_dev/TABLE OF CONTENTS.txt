@@ -1,0 +1,16 @@
+
+DeathRun_ReadMe.txt - change log and some more stuff
+
+runDedicatedServer.bat - example start server script
+
+deathrun.cfg - main configuration file for Death Run mod
+deathrun_songs.cfg - songs names
+server.cfg - example server configuration file
+
+deathrun.iwd - contains weapons, sprays and skins
+deathrun_sounds.iwd - end round music
+mod.ff - main mod file
+
+plugins/ - place where you install new plugins
+plugins/_plugins.gsc - plugins loader
+plugins/example.gsc - example plugin that shows welcome message to new players

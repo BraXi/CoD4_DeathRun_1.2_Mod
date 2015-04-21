@@ -1,0 +1,140 @@
+#include "ui/menudef.h"
+
+#define ORIGIN_DIY_TITLE_PC			42 270
+#define ORIGIN_DIY_FRAME_PC			35 270
+#define ORIGIN_DIY_PC				37 290
+
+#define ORIGIN_DIY_TITLE_HIDEF		82 300
+#define ORIGIN_DIY_FRAME_HIDEF		75 300
+#define ORIGIN_DIY_HIDEF			77 320
+#define ORIGIN_DIY_TITLE			166 300
+#define ORIGIN_DIY_FRAME			159 300
+#define ORIGIN_DIY					161 320
+
+#define WIDESCREEN_OFFSET			107 0
+
+		#include "ui_mp/perm_bans.inc"
+// Displayed when client is initially connecting to the server.
+{
+	menuDef 
+	{
+		name			"connect"
+		style			WINDOW_STYLE_FILLED
+		fullScreen		MENU_FALSE
+		focusColor		COLOR_FOCUSED
+		visible			MENU_FALSE		
+		backcolor		1 1 1 1
+		background		"$levelBriefing"
+		rect			FULLSCREEN_WIDE
+		
+		//onOpen { CHECK_BAN1; CHECK_BAN2; CHECK_BAN3; }
+		//onClose { CHECK_BAN1; CHECK_BAN2; CHECK_BAN3; }
+
+		// mod
+		itemDef
+		{
+			rect			-70 -135 140 75 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			WIDESCREEN_OFFSET
+			style			WINDOW_STYLE_FILLED
+			visible			1		
+			backcolor		1 1 1 1
+			background		"server_logo"
+		}
+
+
+		
+
+		// oh you, AR51 ... why u joined the dark side?
+		/*#define IS_AR51 ( when(dvarString("fs_game") == "mods\ar51_deathrun" )
+		
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			visible			IS_AR51
+			backcolor		1 1 1 1
+			background		"black"
+			rect			0 0 648 480
+		}
+		itemDef 
+		{
+			text			"^3From The Bibble of Universe\n"And strangers From outter space lived in Area number 51, the dark energy was all over the place\nbut than the Galaxy turned against them and the war began.\nWhen humans were about to lose their last battle, Queen BraXi joined the Republic to stop alien invasion\nand the world has changed, for ever, for better, and the aliens died...""
+			style			0
+			decoration
+			textscale		.9
+			//rect			3 134 110 20
+			origin			320 200
+			textalign		ITEM_ALIGN_CENTER
+			//textalignx	117
+			textaligny		16
+			visible			1
+		}
+		execOnDvar ""IS_AR51" "wait 5;disconnect""*/
+
+		// load progress bar background
+		itemDef 
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			-128 -40 260 4 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			WIDESCREEN_OFFSET
+			backcolor		0 0 0 0.8
+			visible			1	decoration	
+		}
+		// load progress bar
+		itemDef 
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect			-127 -39 258 2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			WIDESCREEN_OFFSET
+			background		"white"
+			visible			1	decoration
+		}
+		
+		/*itemDef 
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			ORIGIN_DIY_FRAME_PC 285 140
+			origin			WIDESCREEN_OFFSET
+			backcolor		0 0 0 .5
+			visible			1	decoration	}
+		itemDef
+		{
+			rect			ORIGIN_DIY_PC 270 140
+			type			ITEM_TYPE_BUTTON
+			textfont		UI_FONT_DEFAULT
+			dvar			"didyouknow"
+			textalign 		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0
+			textalignx 		5
+			textaligny 		0  
+			origin			WIDESCREEN_OFFSET
+			visible			1 decoration	autowrapped	}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			visible			1
+			rect			ORIGIN_DIY_TITLE_PC 0 0
+			origin			WIDESCREEN_OFFSET
+			forecolor		1 0.8 0.4 1
+			text			"@BRAX_MODNAME"
+			textfont		UI_FONT_DEFAULT
+			textscale		TEXTSIZE_DEFAULT decoration	}
+		itemDef
+		{
+			
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_DIY_FRAME_PC 283 138
+			origin			WIDESCREEN_OFFSET
+			background		"white"
+			forecolor		.5 .5 .5 0.15
+			border			1
+			bordersize		1
+			bordercolor		0.5 0.5 0.5 0.7
+			visible			1	decoration
+		}*/
+		#include "ui/safearea.menu"
+	}
+}
+
