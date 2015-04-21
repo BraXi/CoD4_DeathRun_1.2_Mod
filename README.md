@@ -4,13 +4,14 @@ Deathrun is a mod in which a single player fights alone against the other team, 
 The players in the opposite team have to kill the trapmaster (aka. activator) after finishing his course without dying. 
 As of this day, more than 4 years after it's initial release, it's still one of the most popular CoD4 mods along with ProMod and CodJumper.
 
+
 * Official website: http://www.moddb.com/mods/braxs-death-run-mod
 * Official trailer: https://www.youtube.com/watch?v=n_YTTdQPJfk
 
 Have fun with that code, would be nice if you commited something back to the mod if you find it worthy =)
 Extract deathrun_dev to your cod4/mods directory and run makeMod.bat, press D (you're copying directories) if asked
 and then run makeIWD.bat to build .IWD files.
-
+PS. Files are slightly diferent from what was in official beta build, I've merged what I could from retrieved 1.2.1 files which was meant to be released in May 2012 but was never due to hard drive crash.
 
 Credits
 =======
