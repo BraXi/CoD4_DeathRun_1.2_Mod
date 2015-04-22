@@ -310,7 +310,11 @@ playerConnect() // Called when player is connecting to server
 		self.name = "undefined name";
 	if( !isDefined( self.guid ) )
 		self.guid = "undefined guid";
-
+	
+	self setClientDvar( "drui_character", (self getStat( 980 )) );
+	self setClientDvar( "drui_spray", (self getStat( 979 )) );
+	self setClientDvar( "drui_weapon", (self getStat( 981 )) );
+	
 	//self thread doHud();
 	self thread updateHealthBar();
 
@@ -352,6 +356,9 @@ playerConnect() // Called when player is connecting to server
 	
 	self thread modBanned();
 
+	if(!isDefined(level.spawn["spectator"]))
+		level.spawn["spectator"] = level.spawn["allies"][0];
+		
 	if( game["state"] == "endmap" )
 	{
 		self spawnSpectator( level.spawn["spectator"].origin, level.spawn["spectator"].angles );
@@ -1123,6 +1130,8 @@ gameLogic()
 	game["roundStarted"] = true;
 
 	visionSetNaked( level.mapName, 2.0 );
+	
+	thread roundDelay();
 
 	players = getAllPlayers();
 	for( i = 0; i < players.size; i++ )
@@ -1216,6 +1225,21 @@ gameLogic()
 				thread endRound( "Activator died", "jumpers" );
 			else if( !level.activators && !level.jumpers )
 				thread endRound( "Everyone died", "activators" );
+		}
+	}
+}
+
+roundDelay()
+{
+	wait 2;
+	players = getAllPlayers();
+	for( i = 0; i < players.size; i++ )
+	{
+		if( players[i] isPlaying() )
+		{
+			players[i] unLink();
+			players[i] enableWeapons();
+			players[i] thread antiAFK();
 		}
 	}
 }
