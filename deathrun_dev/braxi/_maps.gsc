@@ -277,6 +277,76 @@ init()
 	case "mp_dr_jurapark":
 		trigger = spawn( "trigger_radius", (1001.44, 2104.73, -60.875), 0, 96, 48 );
 		break;
+// ===== Added By Lossy ===== //
+	case "mp_dr_blackandwhite":
+		trigger = spawn( "trigger_radius", (13070, 149, 7), 0, 64, 98);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_tribute":
+		trigger = spawn( "trigger_radius", (399, 385, -229), 0, 64, 30);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_highrise":
+		trigger = spawn( "trigger_radius", (4578.04, 1810, -1972), 0, 64, 20);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_semtext":
+		trigger = spawn( "trigger_radius", (-378, 3566, 24), 0, 60, 30);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_bricky":
+		trigger = spawn( "trigger_radius", (26, 1642, 125), 0, 174, 30);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_mine":
+		trigger = spawn( "trigger_radius", (910, 5946, -900), 0, 100, 30);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_qube":
+		trigger = spawn( "trigger_radius", (-3559, -1031, 2878), 0, 252, 20);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_dr_detained":
+		trigger = spawn( "trigger_radius", (-178, -14860, -678), 0, 100, 20);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_factory":
+		trigger = spawn( "trigger_radius", (868, -1597, 195), 0, 30, 10);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_dr_jurapark":
+		trigger = spawn( "trigger_radius", (1010, 2052, -27), 0, 40, 10);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_destroyedv3": 
+		trigger = spawn( "trigger_radius", (-11023, 126, 544), 0, 96, 48);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_wipeout_v2":
+		trigger = spawn( "trigger_radius", (2110, 3765, 533), 0, 10, 20);
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_dragonball":
+		trigger = spawn( "trigger_radius", (-19106, 13358, 316), 0,96, 48 );
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_deathrun_mirroredge":
+		trigger = spawn( "trigger_radius", (-8559, -6094, -2968), 0, 96, 48 );
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_dr_watercity":
+		trigger = spawn( "trigger_radius", (1786, 592, 444), 0, 94, 30 );
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_dr_glass":
+		trigger = spawn( "trigger_radius", (3430, 3151, 92), 0, 94, 30 );
+		trigger.targetname = "endmap_trig";
+		break;
+	case "mp_dr_glass2":
+		trigger = spawn( "trigger_radius", (3398, 3144, 92), 0, 94, 30 );
+		trigger.targetname = "endmap_trig";
+		break;
+
 	}
 
 //===//
@@ -400,6 +470,73 @@ init()
 			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger5", "targetname" );
 			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger6", "targetname" );
 			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger7", "targetname" );
+			break;
+// ===== Added By Lossy ===== //
+		//Petx's/Col!ar MAPS
+		case "mp_dr_jurapark":
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t3", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t1_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t4_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t5_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t6_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t7_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t8", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t9_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t10_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t11_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t12_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t13_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t14_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t15_", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t16_", "targetname" );
+			break;
+		case "mp_dr_indipyramid":
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t1", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t2", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t3", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t4", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t5", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t6", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t7", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t8", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t9", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t10", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t11", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t12", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t13", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t14", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "t15", "targetname" );
+			break;
+		//Wingzor MAPS
+		case "mp_deathrun_diehard":
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "hardlevel", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger_4squares", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger_pusher", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger_rollers", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger_spikes", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trigger_lifter", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "spintest", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap_rotatefloor", "targetname" );
+			break;
+		case "mp_deathrun_wipeoutv2":
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act1", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act2", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act5", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act7", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act8", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act4", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act6", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "act3", "targetname" );
+			break;
+		//Terror MAPS
+		case "mp_dr_sewers":
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap2_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap5_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap4_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap3_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap7_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap8_trig", "targetname" );
+			level.trapTriggers[level.trapTriggers.size] = getEnt( "trap6_trig", "targetname" );
 			break;
 		}
 	}
