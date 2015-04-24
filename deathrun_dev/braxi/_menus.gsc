@@ -280,6 +280,11 @@ onMenuResponse()
 			case "spectator":
 				self closeMenu();
 				self closeInGameMenu();
+				if(self.pers["team"] == "axis")
+				{
+               				self iPrintln("You cant goto spectator as activator!");
+               				continue;
+            			}
 				self braxi\_teams::setTeam( "spectator" );
 				self braxi\_mod::spawnSpectator( level.spawn["spectator"].origin, level.spawn["spectator"].angles );
 				break;
