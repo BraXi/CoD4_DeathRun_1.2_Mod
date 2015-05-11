@@ -314,10 +314,6 @@ init()
 		trigger = spawn( "trigger_radius", (868, -1597, 195), 0, 30, 10);
 		trigger.targetname = "endmap_trig";
 		break;
-	case "mp_dr_jurapark":
-		trigger = spawn( "trigger_radius", (1010, 2052, -27), 0, 40, 10);
-		trigger.targetname = "endmap_trig";
-		break;
 	case "mp_deathrun_destroyedv3": 
 		trigger = spawn( "trigger_radius", (-11023, 126, 544), 0, 96, 48);
 		trigger.targetname = "endmap_trig";
