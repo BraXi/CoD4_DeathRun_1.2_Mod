@@ -4,6 +4,7 @@ Deathrun is a mod in which a single player fights alone against the other team, 
 The players in the opposite team have to kill the trapmaster (aka. activator) after finishing his course without dying. 
 As of this day, more than 4 years after it's initial release, it's still one of the most popular CoD4 mods along with ProMod and CodJumper.
 
+<hr>
 
 * Official website: http://www.moddb.com/mods/braxs-death-run-mod
 * Official trailer: https://www.youtube.com/watch?v=n_YTTdQPJfk
@@ -11,10 +12,11 @@ As of this day, more than 4 years after it's initial release, it's still one of 
 Have fun with that code, would be nice if you commited something back to the mod if you find it worthy =)
 PS. Files are slightly diferent from what was in official beta build, I've merged what I could from retrieved 1.2.1 files which was meant to be released in May 2012 but was never due to hard drive crash.
 
+<hr>
 
 Configuration & Instalation
 ===========================
-Prenotes: Whereas "CoD4 Root" you should be aware it is the root directory of call of duty 4 instalation.
+Prenotes: Whereas "CoD4 Root" you should be aware it is the root directory of call of duty 4 instalation, also please see "Requirements" section.
 
 1. Extract "deathrun_dev" folder to "CoD4 Root/mods" 
 2. Extract CoD4 SP2MP Character Models Pack to your "CoD4 Root/raw" (NOT TO YOUR DEATHRUN_DEV! folder or some unused files might be then bundled with mod), you can grab them from http://modsonline.com/Downloads-full-5244.html
@@ -22,6 +24,7 @@ Prenotes: Whereas "CoD4 Root" you should be aware it is the root directory of ca
 4. Run makeIWD.bat to build .IWD files
 5. [optional] Run runMod.bat to launch your newly compiled mod, you can change launch options (ex. map) by directly editing .bat file
 
+<hr>
 
 Credits
 =======
@@ -36,6 +39,7 @@ Credits
 * Authors of original Deathrun mod for CS 1.6 for idea
 * And others, special thanks to mappers...
 
+<hr>
 
 Requirements
 ============
