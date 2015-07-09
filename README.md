@@ -29,12 +29,12 @@ Prenotes: Whereas "CoD4 Root" you should be aware it is the root directory of ca
 Credits
 =======
 *	BraXi
-*	Bipo - Map Voting and Credits scripts. | Xfire: bipoalarmonk
-*	Duffman - Helping me with time triggers for "Time Records" feature | Xfire: mani96x
-*	|MACOM|Hacker - Rigging: Zoey, Juggernaut, masterchief and new hands | Xfire: 05hepburn
-*	_INSANE_ - Converted Zakhaev and Farmer from SP to MP. | Xfire: undertakerhs
-*	MR-X - Main Menu background. | Xfire: mousasalem
-*	Etheross - Converted Shepherd, Makarov & Tomahawk to CoD4. | Xfire: etheross
+*	Bipo - Map Voting and Credits scripts
+*	Duffman - Placing triggers for "Time Record" on maps which haven't included them in first place
+*	|MACOM|Hacker - Rigging: Zoey, Juggernaut, masterchief and new hands
+*	_INSANE_ - Converted Zakhaev and Farmer from SP to MP
+*	MR-X - Main Menu background
+*	Etheross - Converted Shepherd, Makarov & Tomahawk models to CoD4
 * Infinity Ward for models from CoD:MW2
 * Authors of original Deathrun mod for CS 1.6 for idea
 * And others, special thanks to mappers...
