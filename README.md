@@ -9,9 +9,19 @@ As of this day, more than 4 years after it's initial release, it's still one of 
 * Official trailer: https://www.youtube.com/watch?v=n_YTTdQPJfk
 
 Have fun with that code, would be nice if you commited something back to the mod if you find it worthy =)
-Extract deathrun_dev to your cod4/mods directory and run makeMod.bat, press D (you're copying directories) if asked
-and then run makeIWD.bat to build .IWD files.
 PS. Files are slightly diferent from what was in official beta build, I've merged what I could from retrieved 1.2.1 files which was meant to be released in May 2012 but was never due to hard drive crash.
+
+
+Configuration & Instalation
+===========================
+Prenotes: Whereas <CoD4 Root> you should be aware that it's the root directory of call of duty 4 instalation.
+
+1. Extract "deathrun_dev" folder to "<CoD4 Root>/mods" 
+2. Extract CoD4 SP2MP Character Models Pack to your "<CoD4 Root>/raw" (NOT TO YOUR DEATHRUN_DEV! folder or some unused files might be then bundled with mod), you can grab them from http://modsonline.com/Downloads-full-5244.html
+3. run makeMod.bat, during the first compilation, whenever asked if copying a file or directory press D (you're copying directories)
+4. Run makeIWD.bat to build .IWD files
+5. [optional] Run runMod.bat to launch your newly compiled mod, you can change launch options (ex. map) by directly editing .bat file
+
 
 Credits
 =======
