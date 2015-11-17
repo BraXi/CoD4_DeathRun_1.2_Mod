@@ -240,8 +240,9 @@ buildAbilityInfo()
 		level.abilityInfo[id]["codeName"] = tableLookup( tableName, 0, idx, 3 );
 		level.abilityInfo[id]["shader"] = tableLookup( tableName, 0, idx, 4 );
 		level.abilityInfo[id]["name"] =  tableLookup( tableName, 0, idx, 5 );
-		level.abilityInfo[id]["desc"] = loadFx( tableLookup( tableName, 0, idx, 6 ) );
+		level.abilityInfo[id]["desc"] = tableLookup( tableName, 0, idx, 6 );
 		
+//		precacheString( level.abilityInfo[id]["desc"]  );		
 		precacheShader( level.abilityInfo[id]["shader"] );
 		level.numAbilities++;
 	}
