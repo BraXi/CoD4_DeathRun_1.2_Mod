@@ -1,5 +1,4 @@
 del mod.ff
-del ..\..\players\profiles\BraX\mods\deathrun_dev\mpdata
 
 xcopy animtrees ..\..\raw\animtrees /SY
 xcopy braxi ..\..\raw\braxi /SY
