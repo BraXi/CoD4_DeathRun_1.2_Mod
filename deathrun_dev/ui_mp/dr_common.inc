@@ -6,8 +6,8 @@
 
 #ifndef DR_BUTTON_FORECOLOR
 	#define DR_BUTTON_FORECOLOR 1 1 1 1
-	#define DR_BUTTON_BACKCOLOR 0.4 0.4 0.4 0.3
-	#define DR_BUTTON_BACKCOLOR_FOCUSED 0.4 0.4 0.4 0.4
+	#define DR_BUTTON_BACKCOLOR 0.4 0.4 0.4 0.4
+	#define DR_BUTTON_BACKCOLOR_FOCUSED 0.4 0.4 0.4 0.3
 	#define DR_BUTTON_BORDERCOLOR 0.5 0.5 0.5 0.15
 #endif
 
@@ -17,6 +17,7 @@
 
 #define DR_BUTTON( id, x, y, w, h, itemName, itemAction, visArg ) \
 		DR_BUTTON_EXT( id, x, y, w, h, itemName, itemAction, ;, ;, visArg )
+
 
 
 #define DR_BUTTON2( id, x, y, w, h, itemName, itemAction, visArg ) \
@@ -31,19 +32,15 @@ itemDef \
 	style			WINDOW_STYLE_FILLED \
 	border			1 \
 	bordercolor		DR_BUTTON_BORDERCOLOR \ 
-	forecolor		DR_BUTTON_FORECOLOR \ 
 	backcolor		DR_BUTTON_BACKCOLOR \
-} \
-itemDef \
-{ \
-	visible			visArg \
-	name			"button_over"id \
-	rect			x y w h DR_BUTTON_ALIGN \
-	style			WINDOW_STYLE_FILLED \
-	border			1 \
-	bordercolor		DR_BUTTON_BORDERCOLOR \ 
-	forecolor		DR_BUTTON_FORECOLOR \ 
-	backcolor		DR_BUTTON_BACKCOLOR_FOCUSED \
+	mouseEnter \
+	{ \
+		setitemcolor "button_default"id backcolor	DR_BUTTON_BACKCOLOR_FOCUSED \
+	} \
+	mouseExit \
+	{ \
+		setitemcolor "button_default"id backcolor	DR_BUTTON_BACKCOLOR \
+	} \
 } \
 itemDef \
 { \
@@ -62,21 +59,18 @@ itemDef \
 	mouseEnter \
 	{ \
 		play "mouse_over"; \
-		show "button_over"id; \
-		hide "button_default"id; \
 		onItemEnter \
 	} \
 	mouseExit \
 	{ \
-		show "button_default"id; \
-		hide "button_over"id; \
 		onItemExit \
 	} \
 	action \
 	{ \
+		play "mouse_click"; \
 		itemAction \
 	} \
-} 
+}  
 
 
 #define DR_BUTTON2_EXT( id, x, y, w, h, itemName, itemAction, onItemEnter, onItemExit, visArg ) \
@@ -88,19 +82,15 @@ itemDef \
 	style			WINDOW_STYLE_FILLED \
 	border			1 \
 	bordercolor		DR_BUTTON_BORDERCOLOR \ 
-	forecolor		DR_BUTTON_FORECOLOR \ 
 	backcolor		DR_BUTTON_BACKCOLOR \
-} \
-itemDef \
-{ \
-	visible			visArg \
-	name			"button_over"id \
-	rect			x y w h DR_BUTTON_ALIGN \
-	style			WINDOW_STYLE_FILLED \
-	border			1 \
-	bordercolor		DR_BUTTON_BORDERCOLOR \ 
-	forecolor		DR_BUTTON_FORECOLOR \ 
-	backcolor		DR_BUTTON_BACKCOLOR_FOCUSED \
+	mouseEnter \
+	{ \
+		setitemcolor "button_default"id backcolor	DR_BUTTON_BACKCOLOR_FOCUSED \
+	} \
+	mouseExit \
+	{ \
+		setitemcolor "button_default"id backcolor	DR_BUTTON_BACKCOLOR \
+	} \
 } \
 itemDef \
 { \
@@ -119,14 +109,10 @@ itemDef \
 	mouseEnter \
 	{ \
 		play "mouse_over"; \
-		show "button_over"id; \
-		hide "button_default"id; \
 		onItemEnter \
 	} \
 	mouseExit \
 	{ \
-		show "button_default"id; \
-		hide "button_over"id; \
 		onItemExit \
 	} \
 	action \
@@ -134,10 +120,6 @@ itemDef \
 		itemAction \
 	} \
 } 
-
-
-
-
 
 
 #define DR_WEAPON( y, itemID ) \

@@ -273,6 +273,9 @@ onMenuResponse()
 					continue;
 				}
 
+				if(self.sessionstate == "playing" || game["state"] == "round ended"  )
+					continue;
+
 				if( self canSpawn() )
 					self braxi\_mod::spawnPlayer();
 				break;

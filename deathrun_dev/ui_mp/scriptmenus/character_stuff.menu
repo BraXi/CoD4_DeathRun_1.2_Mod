@@ -34,7 +34,7 @@
 		onEsc
 		{
 			close self;
-			open "character_stuff";
+			open "team_select";
 		}
 		
 		#include "ui_mp/dr_menu_frame.inc"

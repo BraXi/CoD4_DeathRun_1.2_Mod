@@ -32,7 +32,6 @@
 #define MENU_FONT_COLOR2		1 1 1 0.5
 #define MENU_LOCKED_COLOR		0.25 0.25 0.25 1
 
-#define PC
 //-------------------------------------
 
 #define ORIGIN_BUTTON_BACK		52 438
@@ -100,6 +99,7 @@
 		onEsc
 		{
 			close self;
+			open "team_select";
 		}
 		
 		// ------------------  statics ------------------------
