@@ -59,7 +59,6 @@ init( modVers )
 		}
 	}
 	
-	thread plugins\_actiall::actiall();
 	level.matchStartText = createServerFontString( "objective", 1.5 );
 	level.matchStartText setPoint( "CENTER", "BOTTOM", 0, -20 );
 	level.matchStartText.sort = 1001;
