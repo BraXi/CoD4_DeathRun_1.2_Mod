@@ -11,8 +11,9 @@
 /*
 	BraXi's Death Run Mod
 	
-	Website: www.braxi.org
-	E-mail: paulina1295@o2.pl
+	https://www.moddb.com/mods/braxs-death-run-mod
+	
+	E-mail: paulinabraxi@gmail.com
 
 	[DO NOT COPY WITHOUT PERMISSION]
 */
