@@ -10,16 +10,39 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.org
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
+
+	Server administration module via commands and menu.
+*/
+
+/*
+	Permissions to use in config:
+	a - rcon access, makes client automaticaly login to rcon, very OP so use wisely
+	b - admin head icon
+	c - kill
+	d - wtf
+	e - spawn
+	f - warn
+	g - kick
+	h - ban
+	i - remove warn
+	j - heal
+	k - bounce
+	l - drop item
+	m - drop all items
+	x - none (non admin player)
 */
 
 init()
 {
-	//setDvar( "dr_admin_0"
+
 	precacheMenu( "dr_admin" );
 
 	while( 1 )
@@ -96,27 +119,6 @@ parseAdminInfo( dvar )
 
 	self thread adminMenu();
 }
-
-
-
-/*
-	PERMISSIONS:
-	a - rcon access
-	b - admin head icon
-	c - kill
-	d - wtf
-	e - spawn
-	f - warn
-	g - kick
-	h - ban
-	i - remove warn
-	j - heal
-	k - bounce
-	l - drop item
-	m - drop all items
-	x - none (non admin players)
-*/
-
 
 
 hasPermission( permission )

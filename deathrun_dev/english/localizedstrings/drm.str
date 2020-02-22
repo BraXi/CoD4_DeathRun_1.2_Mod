@@ -1,18 +1,25 @@
-///////////////////////////////////////////////////////
-///|         |///|        |///|       |/\  \/////  ////
-///|  |////  |///|  |//|  |///|  |/|  |//\  \///  /////
-///|  |////  |///|  |//|  |///|  |/|  |///\  \/  //////
-///|          |//|  |//|  |///|       |////\    ///////
-///|  |////|  |//|         |//|  |/|  |/////    \//////
-///|  |////|  |//|  |///|  |//|  |/|  |////  /\  \/////
-///|          |//|__|///|__|//|__|/|__|///  ///\  \////
-/////////////////////////////////////////__/////\__\///
-///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
 //
-//	Xfire : maciusiak
+//	BraXi's Death Run Mod
+//	(c) 2010-2020 Paulina Sokołowska
 //
-// D.R.M. - Death Run Menus
+//	https://www.moddb.com/mods/braxs-death-run-mod
 //
+//	Twitter: https://twitter.com/TheBraXi
+//	GitHub: https://github.com/BraXi/
+//
+//	E-mail: paulinabraxi somewhere at gmail.com
+//
+// Localization for dr_* menus
 
 VERSION             "1"
 CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
@@ -20,19 +27,19 @@ FILENOTES           ""
 
 
 REFERENCE           PLAY
-LANG_ENGLISH        "Auto-Assign"
+LANG_ENGLISH        "Play"
 
 REFERENCE           PLAY_DESC
 LANG_ENGLISH        "Start game as Jumper."
 
 REFERENCE           SPECTATE
-LANG_ENGLISH        "Spectator"
+LANG_ENGLISH        "Spectate"
 
 REFERENCE           SPECTATE_DESC
 LANG_ENGLISH        "Watch others players."
 
 REFERENCE           CHARACTER
-LANG_ENGLISH        "Customize character"
+LANG_ENGLISH        "Customize Character"
 
 REFERENCE           CHARACTER_DESC
 LANG_ENGLISH        "Select your gaming character and spray logo."
@@ -52,7 +59,7 @@ LANG_ENGLISH        "Change various game settings."
 
 
 REFERENCE           WHAT_IS_DEATHRUN
-LANG_ENGLISH        "Death Run is a classical mod in which a single player fights alone against the other team, his only weapons are his deadly traps. The players in the opposite team have to kill the activator after finishing his course without dying.\n\n^2Mod Version: ^31.2.1 (15.06.2014)\n^2Website: ^3www.braxi.org"
+LANG_ENGLISH        "Death Run is a classical mod in which a single player fights alone against the other team, his only weapons are his deadly traps. The players in the opposite team have to kill the activator after finishing his course without dying.\n\n^2Mod Version: ^31.2.2 (23.02.2020)\n^2www.moddb.com/mods/braxs-death-run-mod"
 
 
 REFERENCE           COMMANDS

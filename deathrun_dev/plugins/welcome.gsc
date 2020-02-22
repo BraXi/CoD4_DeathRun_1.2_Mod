@@ -1,18 +1,28 @@
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
 //
-// Plugin name: Welcome Message
-// Author: BraXi
-// Version: 1.0
-// Website: www.braxi.org
-// Description: Displays welcome message for newly connected player
+//	BraXi's Death Run Mod
+//	(c) 2010-2020 Paulina Sokołowska
 //
-// This plugin was designed for Death Run, after some tweaks it may also work with 
-// other mods, but please give credits to me if you find this useful in your mod.
+//	https://www.moddb.com/mods/braxs-death-run-mod
 //
+//	Twitter: https://twitter.com/TheBraXi
+//	GitHub: https://github.com/BraXi/
+//
+//	E-mail: paulinabraxi somewhere at gmail.com
 
 init( modVersion )
 {
-	braxi\_dvar::addDvar( "welcome_message1", "welcome_message1", "Welcome to ^1AfterLife ^7Death Run server!", "", "", "string" );
-	braxi\_dvar::addDvar( "welcome_message2", "welcome_message2", "^3Visit www.AfterLifeGaming.net", "", "", "string" );
+	braxi\_dvar::addDvar( "welcome_message1", "welcome_message1", "Welcome to Death Run", "", "", "string" );
+	braxi\_dvar::addDvar( "welcome_message2", "welcome_message2", "Have fun", "", "", "string" );
 
 	if( getDvar( "welcome_player" ) == "" )
 		setDvar( "welcome_player", "0" );

@@ -1,11 +1,28 @@
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
 /*
-	I know that this script sux and is horribly shitty
-	but i was in hurry so thats why its all big mess.
-	Script written in 20 minutes, LOL.
+	BraXi's Death Run Mod
+	(c) 2010-2020 Paulina Sokołowska
 
-	BraX.
-	Xfire: maciusiak
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
+
+// I know that this script looks horrible, but it works ;)
+// What would you expect from proof-of-concept code that eventualy made it to production, huh?
+
 
 main()
 {

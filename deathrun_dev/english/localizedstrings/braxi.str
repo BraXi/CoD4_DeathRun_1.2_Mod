@@ -1,17 +1,24 @@
-///////////////////////////////////////////////////////
-///|         |///|        |///|       |/\  \/////  ////
-///|  |////  |///|  |//|  |///|  |/|  |//\  \///  /////
-///|  |////  |///|  |//|  |///|  |/|  |///\  \/  //////
-///|          |//|  |//|  |///|       |////\    ///////
-///|  |////|  |//|         |//|  |/|  |/////    \//////
-///|  |////|  |//|  |///|  |//|  |/|  |////  /\  \/////
-///|          |//|__|///|__|//|__|/|__|///  ///\  \////
-/////////////////////////////////////////__/////\__\///
-///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
 //
-//	Xfire : braxpl
+//	BraXi's Death Run Mod
+//	(c) 2010-2020 Paulina Sokołowska
 //
+//	https://www.moddb.com/mods/braxs-death-run-mod
 //
+//	Twitter: https://twitter.com/TheBraXi
+//	GitHub: https://github.com/BraXi/
+//
+//	E-mail: paulinabraxi somewhere at gmail.com
+
 
 VERSION             "1"
 CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
@@ -22,13 +29,13 @@ REFERENCE           MODNAME
 LANG_ENGLISH        "^2BraXi's ^7Death Run Mod ^31.2.1"
 
 REFERENCE           MOTD
-LANG_ENGLISH        "Visit ^2www.braxi.org ^7- the official Death Run Mod forums."
+LANG_ENGLISH        "Visit ^2www.moddb.com/mods/braxs-death-run-mod^7."
 
 REFERENCE           NOTICE
 LANG_ENGLISH        "^3Death Run Notice"
 
 REFERENCE           GAME_EXPERIENCE_CHANGED
-LANG_ENGLISH        "BraXi's Death Run Mod 1.2\nwww.braxi.org"
+LANG_ENGLISH        "BraXi's Death Run Mod 1.2\nwww.moddb.com/mods/braxs-death-run-mod"
 
 REFERENCE           ABOUT
 LANG_ENGLISH        "About Death Run Mod"

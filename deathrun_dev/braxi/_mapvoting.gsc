@@ -10,13 +10,15 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.org
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina SokoÅ‚owska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
-
 
 /*********** MAPVOTING ***********
 
@@ -26,7 +28,7 @@
 	Desc: Dynamic Mapvoting Script
 	Date: Feb. 2011
 	
-All rights reserved © iNext Gaming
+All rights reserved ï¿½ iNext Gaming
 **********************************/
 
 
@@ -36,10 +38,8 @@ init()
 {
 	level.mapvote = 0;
 
-	//BraX
 	precacheString( &"MAPVOTE_PRESSFIRE" );
 	precacheString( &"MAPVOTE_WAIT4VOTES" );
-	//<--
 }
 
 startMapvote() 

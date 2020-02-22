@@ -1,13 +1,23 @@
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
 //
-// Plugin name: Uber Equipment
-// Author: BraXi
-// Version: 1.0
-// Website: www.braxi.cba.pl
-// Description: Does give a specified weapon to admin
+//	BraXi's Death Run Mod
+//	(c) 2010-2020 Paulina Sokołowska
 //
-// This plugin was designed for Death Run, after some tweaks it may also work with 
-// other mods, but please give credits to me if you find this useful in your mod.
+//	https://www.moddb.com/mods/braxs-death-run-mod
 //
+//	Twitter: https://twitter.com/TheBraXi
+//	GitHub: https://github.com/BraXi/
+//
+//	E-mail: paulinabraxi somewhere at gmail.com
 
 init( modVersion )
 {

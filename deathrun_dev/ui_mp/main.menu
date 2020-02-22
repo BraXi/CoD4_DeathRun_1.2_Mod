@@ -245,6 +245,6 @@
 		CHOICE_SECTION_TITLE( 2, "Mod created by:" )
 		CHOICE_SUBTEXT_COLOR_VIS( 3, "               BraXi", textcolor, 1 )
 		CHOICE_SECTION_TITLE( 5, "More info in readme.txt included with mod." )
-		CHOICE_SECTION_TITLE( 6, "Visit official Death Run forums at ^3www.braxi.org" )
+		CHOICE_SECTION_TITLE( 6, "https://www.moddb.com/mods/braxs-death-run-mod" )
 	}
 }

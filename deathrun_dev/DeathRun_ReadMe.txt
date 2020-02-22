@@ -8,12 +8,20 @@
 ////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
 ////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
 ///////////////////////////////////////////////////////////////
+// 
+// BraXi's Death Run Mod
+// (c) 2010-2020 Paulina Sokołowska
+//
+// Version: 1.2.1 (02/2020)
+// 
+// https://www.moddb.com/mods/braxs-death-run-mod
+// 
+// Twitter: https://twitter.com/TheBraXi
+// GitHub: https://github.com/BraXi/
+// 
+// E-mail: paulinabraxi somewhere at gmail.com
+// 
 
-BraXi's Death Run Mod
-Version: 1.2
-
-
-Visit www.braxi.org for latest news, maps and tutorials for Death Run.
 
 
 The classical mod in which a single player fights alone against the other team, 
@@ -24,19 +32,12 @@ to kill the trapmaster after finishing his course without dying.
 ================================================================
 ================================================================
 
-DEATH RUN MAPS	: http://braxi.org/forum/forumdisplay.php?fid=5
-BUG REPORTS	: http://braxi.org/forum/forumdisplay.php?fid=6
-DISCUSSION	: http://braxi.org/forum/forumdisplay.php?fid=7
-TUTORIALS	: http://braxi.org/forum/forumdisplay.php?fid=11
-PLUGINS 	: http://braxi.org/forum/forumdisplay.php?fid=12
-
-================================================================
-================================================================
-
  Change log:
 
-1.2 FINAL [xx.xx.xxxx]:
->> This release is the most stable version of mod. <<
+1.2.1:
+Updated contact details.
+
+1.2:
 
 [F] Diferent view models (hands) for characters
 [F] Unlock popups are now showing correct items

@@ -10,12 +10,19 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.net
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
+
+// This file defines player spawn points for use in Radiant.
+
+
 
 /*QUAKED mp_global_intermission (1.0 0.0 1.0) (-16 -16 -16) (16 16 16)
 Intermission is randomly viewed from one of these positions.

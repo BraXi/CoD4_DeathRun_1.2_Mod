@@ -10,14 +10,36 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	https://www.moddb.com/mods/braxs-death-run-mod
-	
-	E-mail: paulinabraxi@gmail.com
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
+
+	Server administration module via commands and menu.
 */
 
+
+/*
+	Permissions to use in config:
+	a - rcon access, makes client automaticaly login to rcon, very OP so use wisely
+	b - admin head icon
+	c - kill
+	d - wtf
+	e - spawn
+	f - warn
+	g - kick
+	h - ban
+	i - remove warn
+	j - heal
+	k - bounce
+	l - drop item
+	m - drop all items
+	x - none (non admin player)
+*/
 
 #include braxi\_common;
 

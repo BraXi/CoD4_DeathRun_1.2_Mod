@@ -10,11 +10,14 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.org
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
 
 #include maps\mp\_utility;

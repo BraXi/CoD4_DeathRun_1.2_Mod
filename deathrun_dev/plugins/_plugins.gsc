@@ -8,13 +8,18 @@
 ////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
 ////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
 ///////////////////////////////////////////////////////////////
-/*
-	BraXi's Death Run Mod 1.2
-	
-	Xfire: braxpl
-	E-mail: paulina1295@o2.pl
-	Website: www.braxi.org
+//
+//	BraXi's Death Run Mod
+//	(c) 2010-2020 Paulina Sokołowska
+//
+//	https://www.moddb.com/mods/braxs-death-run-mod
+//
+//	Twitter: https://twitter.com/TheBraXi
+//	GitHub: https://github.com/BraXi/
+//
+//	E-mail: paulinabraxi somewhere at gmail.com
 
+/*
 	In this script you can load your own plugins from "\mods\<fs_game>\plugins\" directory or IWD package.
 
 	=====
@@ -35,7 +40,9 @@
 main()
 {
 	//
-	// LoadPlugin( pluginScript, name, author )
+	// syntax is as follows:
+	// LoadPlugin( pluginScript, name, author );
+	// pluginScript - a .gsc file to load
 	//
 
 	/* === BEGIN === */
@@ -43,8 +50,10 @@ main()
 //	LoadPlugin( plugins\vip::init, "Weapon", "BraXi" );
 	LoadPlugin( plugins\antiwallbang::init, "Anti-Wallbang", "Viking" );
 	LoadPlugin( plugins\_nomusic::init, "No Double Music", "BraXi" );
-	LoadPlugin( plugins\_efr::init, "Unlimit Free Run Rounds", "Rycoon" );
+//	LoadPlugin( plugins\_efr::init, "Unlimit Free Run Rounds", "Rycoon" );
 	LoadPlugin( plugins\qubefix::init, "Qube Fix", "Darmuh" );
+
+	// Map specific plugins, hacks here
 	if( getDvar("mapname") == ("mp_deathrun_skypillar") )
 		LoadPlugin( plugins\skypillarbugfix::init, "Sky Pillar Bug Fix", "Duffman" );
 	if(getDvar("mapname") == "mp_dr_sm_world")

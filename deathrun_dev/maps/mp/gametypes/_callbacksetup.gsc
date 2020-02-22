@@ -10,11 +10,14 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.net
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
+
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
 
 
@@ -29,11 +32,11 @@ Called by code after the level's main script function has run.
 ================*/
 CodeCallback_StartGameType()
 {
-	println( "===================================" );
+	println( "=====================================" );
 	println( "Death Run Mod 1.2 by BraXi" );
-	println( "Visit: www.braxi.org" );
-	println( "===================================" );
-	setdvar("g_gametype", "deathrun");
+	println( "moddb.com/mods/braxs-death-run-mod" );
+	println( "=====================================" );
+	setdvar("g_gametype", "deathrun"); // might seem primitive, but it actually kinda works, I think so?
 
 	// If the gametype has not beed started, run the startup
 	if(!isDefined(level.gametypestarted) || !level.gametypestarted)

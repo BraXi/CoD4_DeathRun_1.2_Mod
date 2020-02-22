@@ -10,17 +10,19 @@
 ///////////////////////////////////////////////////////////////
 /*
 	BraXi's Death Run Mod
-	
-	Website: www.braxi.org
-	E-mail: paulina1295@o2.pl
+	(c) 2010-2020 Paulina Sokołowska
 
-	[DO NOT COPY WITHOUT PERMISSION]
+	https://www.moddb.com/mods/braxs-death-run-mod
 
-	=== INFO ===
-		In this script you can add following things:
-			- blockers	[ spawnCollision( (X,Y,Z), width, height ) ]
-			- arrays of activation triggers for specified maps
+	Twitter: https://twitter.com/TheBraXi
+	GitHub: https://github.com/BraXi/
+
+	E-mail: paulinabraxi somewhere at gmail.com
 */
+//	In this script you can add following:
+//		- blockers that will create invisible walls for players [ spawnCollision( (X,Y,Z), width, height ) ]
+//		- arrays of activation triggers for specified maps, used for freerun and detection of trap usage
+
 
 #include braxi\_common;
 

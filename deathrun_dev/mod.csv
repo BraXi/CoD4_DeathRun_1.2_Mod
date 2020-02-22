@@ -1,16 +1,26 @@
-// Death Run Mod by BraXi
-// Xfire: braxpl
-
-//rawfile,animtrees/ac130.atr
-//xmodel,c130_zoomrig
-//material,ac130_overlay_25mm
-//material,ac130_overlay_40mm
-//material,ac130_overlay_105mm
-//material,ac130_overlay_grain
-//weapon,mp/ac130_105mm_mp
-//weapon,mp/ac130_40mm_mp
-//weapon,mp/ac130_25mm_mp
-//rawfile,brax/_ac130.gsc
+///////////////////////////////////////////////////////////////
+////|         |///|        |///|       |/\  \/////  ///|  |////
+////|  |////  |///|  |//|  |///|  |/|  |//\  \///  ////|__|////
+////|  |////  |///|  |//|  |///|  |/|  |///\  \/  /////////////
+////|          |//|  |//|  |///|       |////\    //////|  |////
+////|  |////|  |//|         |//|  |/|  |/////    \/////|  |////
+////|  |////|  |//|  |///|  |//|  |/|  |////  /\  \////|  |////
+////|  |////|  |//|  | //|  |//|  |/|  |///  ///\  \///|  |////
+////|__________|//|__|///|__|//|__|/|__|//__/////\__\//|__|////
+///////////////////////////////////////////////////////////////
+// 
+// BraXi's Death Run Mod
+// (c) 2010-2020 Paulina Sokołowska
+//
+// Version: 1.2.1 (02/2020)
+// 
+// https://www.moddb.com/mods/braxs-death-run-mod
+// 
+// Twitter: https://twitter.com/TheBraXi
+// GitHub: https://github.com/BraXi/
+// 
+// E-mail: paulinabraxi somewhere at gmail.com
+// 
 
 // Scripts
 rawfile,braxi/_admin.gsc
@@ -125,7 +135,6 @@ material,rank_29
 material,icon_risingstar
 
 material,uidr_header
-
 
 material,gfx_spray0
 material,gfx_spray1
