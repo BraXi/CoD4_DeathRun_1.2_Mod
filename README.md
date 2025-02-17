@@ -1,48 +1,46 @@
 # DeathRun 1.2 Mod for CoD4
 
-Deathrun is a mod in which a single player fights alone against the other team, his only weapons are his deadly traps.
-The players in the opposite team have to kill the trapmaster (aka. activator) after finishing his course without dying.
-As of this day, more than 4 years after it's initial release, it's still one of the most popular CoD4 mods along with ProMod and CodJumper.
+DeathRun is a multiplayer modification in which a single player (aka. activator) uses various traps and obstacles to eliminate the other team.
+Players on the opposing team (aka. jumpers) have goal to survive and kill the trapmaster.
 
 <hr>
 
 - Official website: http://www.moddb.com/mods/braxs-death-run-mod
 - Official trailer: https://www.youtube.com/watch?v=n_YTTdQPJfk
 
-Have fun with that code, would be nice if you commited something back to the mod if you find it worthy =)
-PS. Files are slightly diferent from what was in official beta build, I've merged what I could from retrieved 1.2.1 files which was meant to be released in May 2012 but was never due to hard drive crash.
 
 <hr>
 
 # Configuration & Instalation
 
-Prenotes: Whereas "CoD4 Root" you should be aware it is the root directory of call of duty 4 instalation, also please see "Requirements" section.
+* You should have Call of Duty 4: Modern Warfare patched to version 1.6 or 1.7
+* CoD4 Mod Tools must be patched to latest version
+* Some people mention that `linker_pc` is prone to crashes if the game's language isn't English
+* Source files are slightly diferent from the latest official beta build from 2012, they've been retrieved from a broken hard drive.
+* `"CoD4 Root"` is the directory where CoD4 is installed (where the iw3mp.exe is)
 
-1. Extract "deathrun_dev" folder to "CoD4 Root/mods"
-2. Extract the contents of SP2MP.zip to your "CoD4 Root" (NOT TO YOUR DEATHRUN_DEV! folder or some unused files might be then bundled with mod)
-3. run makeMod.bat, during the first compilation, whenever asked if copying a file or directory press D (you're copying directories)
-4. Run makeIWD.bat to build .IWD files
-5. [optional] Run runMod.bat to launch your newly compiled mod, you can change launch options (ex. map) by directly editing .bat file
+To build the mod:
+
+1. Clone this respoitory and copy `deathrun_dev` folder to `CoD4 Root/mods`
+2. Paste the contents of `raw` folder from `SP2MP.zip` to your `"CoD4 Root/raw"` and *NOT TO YOUR DEATHRUN_DEV* folder or some unused files might be then bundled with mod
+3. Run `makeMod.bat` to build `mod.ff` - if this is the first compilation press `D` whenever asked (you're copying directories)
+4. Run `makeIWD.bat` to build `IWD` files
+5. If in doubt, `runMod.bat` should launch the game with the deathrun mod
 
 <hr>
 
 # Credits
 
 - BraXi
-- Bipo - Map Voting and Credits scripts
-- Duffman - Placing triggers for "Time Record" on maps which haven't included them in first place
-- |MACOM|Hacker - Rigging: Zoey, Juggernaut, masterchief and new hands
-- _INSANE_ - Converted Zakhaev and Farmer from SP to MP
-- MR-X - Main Menu background
-- Etheross - Converted Shepherd, Makarov & Tomahawk models to CoD4
-- Infinity Ward for models from CoD:MW2
+- Bipo - For creation of Next Map Voting and Credits scripts
+- Duffman - For adding missing trigger entities for "Time Record" to maps which haven't included them in first place
+- |MACOM|Hacker - For conversion of L4D1 Zoey, MW2 Juggernaut, Halo Masterchief characters, and viewhands models to CoD4
+- _INSANE_ - For converting Zakhaev and Farmer models to MP
+- MR-X - For creation of the Main Menu background, and a logo?
+- Etheross - For converting MW2 models: Shepherd, Makarov & Tomahawk, to CoD4
+- Infinity Ward - For models from CoD:MW2 and the mod tools
 - Authors of original Deathrun mod for CS 1.6 for idea
-- And others, special thanks to mappers...
+- And others who've spent time testing this mod and reporting bugs
+- A very special thanks to mappers who've spent hours, days, and weeks to create maps for this mod...
 
 <hr>
-
-# Requirements
-
-- Call of Duty 4 : Modern Warfare (>=1.6)
-- CoD4 Mod Tools patched to latest version
-- ENGLISH version of CoD4 (for mod compilation)
